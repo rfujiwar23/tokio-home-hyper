@@ -23,17 +23,113 @@
 
     <div class="wrapper">
 
+      <div class="top-banner">
+        IFING BEAUTY
+      </div>
+
+      <section class="sect02" id="section02">
+        <div class="container">
+          <h4 class="text-center">
+            「TOKIO インカラミ」の毛髪強度の回復効果を大幅に引き上げた<br>
+            システムトリートメント史上最高傑作。
+          </h4>
+        </div>
+      </section>
+
+
+      <section class="sect06" id="section06">
+        <div class="sect06-title">
+          <h2>漫画で解説！</h2>
+        </div>
+        <div class="container-fluid">
+          <div id="carouselExampleIndicators" class="carousel slide">
+            <ol class="carousel-indicators">
+              <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+              <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+              <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+              <li data-target="#carouselExampleIndicators" data-slide-to="3"></li>
+            </ol>
+            <div class="carousel-inner">
+              <div class="carousel-item active my-auto">
+                <div class="manga">
+                  <img src="assets/img/IMG_1546.PNG" alt="漫画１" class="img">
+                </div>
+              </div>
+              <div class="carousel-item my-auto">
+                <div class="manga">
+                  <img src="assets/img/IMG_1547.PNG" alt="漫画１" class="img">
+                </div>
+              </div>
+              <div class="carousel-item my-auto">
+                <div class="manga">
+                  <img src="assets/img/IMG_1548.PNG" alt="漫画１" class="img">
+                </div>
+              </div>
+              <div class="carousel-item my-auto">
+                <div class="manga">
+                  <img src="assets/img/IMG_1549.PNG" alt="漫画１" class="img">
+                </div>
+              </div>
+            </div>
+            <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="sr-only">Previous</span>
+            </a>
+            <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="sr-only">Next</span>
+            </a>
+          </div>
+          <!-- <div id="myCarousel" class="carousel slide" data-ride="carousel">
+              
+              <ol class="carousel-indicators">
+                <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+                <li data-target="#myCarousel" data-slide-to="1"></li>
+                <li data-target="#myCarousel" data-slide-to="2"></li>
+                    <li data-target="#myCarousel" data-slide-to="3"></li>
+              </ol>   
+              
+              <div class="carousel-inner">
+                <div class="carousel-item active">
+                  <div class="img-box"><img src="https://res.cloudinary.com/rfujiwar23/image/upload/v1645752052/IMG_1546.png" alt="" class=""></div>
+                </div>
+                    <div class="carousel-item">
+                  <div class="img-box"><img src="https://res.cloudinary.com/rfujiwar23/image/upload/v1645753010/IMG_1547.png" alt="" class=""></div>
+                </div>
+                <div class="carousel-item">
+                  <div class="img-box"><img src="https://res.cloudinary.com/rfujiwar23/image/upload/v1645752155/IMG_1548.png" alt="" class=""></div>
+                </div>
+                <div class="carousel-item">
+                  <div class="img-box"><img src="https://res.cloudinary.com/rfujiwar23/image/upload/v1645753043/IMG_1549.png" alt="" class=""></div>
+                </div>
+              </div>
+              
+              <a class="carousel-control-prev" href="#myCarousel" data-slide="prev">
+                <i class="fa fa-angle-left"></i>
+              </a>
+              <a class="carousel-control-next" href="#myCarousel" data-slide="next">
+                <i class="fa fa-angle-right"></i>
+              </a>
+            </div> -->
+        </div>
+  
+  
+      </section>
+
 
       <section class="sect07" id="section07">
         <h2>ご自宅での使い方</h2>
         <div class="container">
-          <div class="row">
-            <div class="steps col-lg-4" f-for="step in steps">
-              <div class="img">
-
-              </div>
-              <div class="text">
-
+          <div class="col-lg-8 offset-lg-2 col-md-10 offset-md-1">
+            <div class="row">
+              <div class="steps col-lg-4" v-for="step in steps">
+                <div class="img">
+                  <img :src="step.imgLink" alt="TOKIO HYPER INKARAMI HOME" class="img-fluid">
+                </div>
+                <div class="text">
+                  <h4>{{step.id}}</h4>
+                  <p>{{step.stepText}}</p>
+                </div>
               </div>
             </div>
           </div>
@@ -152,11 +248,13 @@
   var example1 = new Vue({
   el: '#section07',
   data: {
-    pictures: [
-      { imgLink: 'assets/img/sect08-001.webp', stepText: 'シャンプー後に水分をしっかり切る' },
-      { imgLink: 'assets/img/sect08-002.webp', stepText: '3センチ程の量を手のひらに出す' },
-      { imgLink: 'assets/img/sect08-003.webp', stepText: 'クリーム状に白くなるまでしっかり伸ばす' },
-      { imgLink: 'assets/img/sect08-004.webp', stepText: 'TOKIO INKARAMI HYPER' },
+    steps: [
+      { id: 1, imgLink: 'assets/img/sect08-001.webp', stepText: 'シャンプー後に水分をしっかり切る' },
+      { id: 2, imgLink: 'assets/img/sect08-002.webp', stepText: '3センチ程の量を手のひらに出す' },
+      { id: 3, imgLink: 'assets/img/sect08-003.webp', stepText: 'クリーム状に白くなるまでしっかり伸ばす' },
+      { id: 4, imgLink: 'assets/img/sect08-004.webp', stepText: '中間から毛先中心にしっかりと馴染ませる' },
+      { id: 5, imgLink: 'assets/img/sect08-004.webp', stepText: '5分程放置する' },
+      { id: 6, imgLink: 'assets/img/sect08-004.webp', stepText: 'ぬめりが取れるまでしっかりすすぐ' },
     ],
     pictures: [
       { imgLink: 'assets/img/sect08-001.webp', altText: 'TOKIO INKARAMI HYPER' },
