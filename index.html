@@ -12,6 +12,7 @@
 <link href="https://fonts.googleapis.com/css2?family=Klee+One&display=swap" rel="stylesheet">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    
 
     <title>Document</title>
     <script src="https://cdn.jsdelivr.net/npm/vue@2.6.14"></script>
@@ -33,13 +34,20 @@
 
       <section class="sect02" id="section02">
         <div class="container">
-          <h4>
-            「TOKIO インカラミ」の毛髪強度の回復効果を大幅に引き上げた<br>
-            システムトリートメント史上最高傑作。
-          </h4>
-          <h5>全国の選ばれたサロンでしか体感できない</h5>
-          <h3>「<ruby>HYPER INKARAMI HOME<rt>ハイパーインカラミホーム</rt></ruby>」</h3>
-          <p>専用集中ケアパック</p>
+          <div class="text">
+            <h4>
+              「TOKIO インカラミ」の毛髪強度の回復効果を大幅に引き上げた<br>
+              システムトリートメント史上最高傑作。
+            </h4>
+            <h5><span class="dot-text">全国の選ばれたサロン</span>でしか体感できない</h5>
+            
+            <h3>「<ruby>HYPER<rt>ハイパー</rt></ruby> <ruby>INKARAMI<rt>インカラミ</rt></ruby> <ruby>HOME<rt>ホーム</rt></ruby>」</h3>
+            
+          </div>
+          <div class="text-img text-center">
+            <p>専用集中ケアパック</p>
+          </div>
+          
         </div>
       </section>
 
@@ -241,10 +249,10 @@
         </div>
       </section>
 
-      <section class="sect09" id="section05">
+      <section class="sect09">
         
-        <div class="container">
-          <div class="col-lg-10 offset-lg-1 col-md-10 offset-md-1">
+        <div class="container" id="section09">
+          <div class="col-lg-8 offset-lg-2 col-md-10 offset-md-1">
             <div class="row section05-manga">
               <div class="col-6"><img src="assets/img/section05-01.jpg" alt="" class="img-fluid"></div>
               <div class="col-6 quote">
@@ -271,15 +279,14 @@
           <h4>必ず『トキオインカラミトリートメント＋TOKIO HOME付』
             を実施しています。</h4>
           <h3 class="text-center mb-5">そんなサロンはこちら↓↓↓</h3>
-          <div class="row">
+          <div class="row col-lg-8 offset-lg-2 col-md-10 offset-md-1">
             <div class="col-sm-6" v-for="salon in salonType">
               <div class="link-to">
                  <div class="text-area">
                   <a :href="salon.link">{{salon.text}}へ</a>
                  </div>
-                <img :src="salon.img" :alt="salon.text">
+                <img :src="salon.img" :alt="salon.text" class="img-fluid">
               </div>
-              <!-- <p>{{salon.text}}</p> -->
             </div>
           </div>
           <h4>いつも来店されてるサロンも紹介されてますよ！！</h4>
@@ -289,7 +296,7 @@
 
 
 
-      <section class="sect10" id="section06">
+      <section class="sect10" id="section10">
         <div class="section-strip">
           <div class="col-lg-10 offset-lg-1 col-md-10 offset-md-1">
             <p>更に「イエでインカラミする毎日」のケアは</p>
@@ -300,12 +307,19 @@
             <h3>週2回のTOKIO HOMEと<br>
               毎日のTOKIO IEシャンプートリートメントで<br>
               「イエでもインカラミ体験」</h3>
+              <div class="row pics">
+                <!-- <div class="col-6 col-sm-6" v-for="pic in tokiopics">
+                  <img :src="pic.imgLink" :alt="image.altText">
+                </div> -->
+                <div class="col-6 col-sm-6">
+                  <img src="assets/img/tokio_bg001.png" class="img-fluid" alt="TOKIO HYPER INKARAMI">
+                </div>
+                <div class="col-6 col-sm-6">
+                  <img src="assets/img/tokio_bg002.png" class="img-fluid" alt="TOKIO HYPER INKARAMI">
+                </div>
+              </div>
           </div>
-          <div class="row">
-            <div class="col-6 col-sm-6" v-for="image in images">
-              <img :src="image.imgURL" :alt="image.alt">
-            </div>
-          </div>
+          
           <div class="to-link">
             <a href="https://ifing-beauty.com/">詳しくはこちら</a>
           </div>
@@ -326,25 +340,27 @@
     
     </div>
 </body>
+
 <script>
   var example1 = new Vue({
   el: '#section07',
-  data: {
-    steps: [
-      { id: 1, imgLink: 'assets/img/sect08-001.webp', stepText: 'シャンプー後に水分をしっかり切る' },
-      { id: 2, imgLink: 'assets/img/sect08-002.webp', stepText: '3センチ程の量を手のひらに出す' },
-      { id: 3, imgLink: 'assets/img/sect08-003.webp', stepText: 'クリーム状に白くなるまでしっかり伸ばす' },
-      { id: 4, imgLink: 'assets/img/sect08-004.webp', stepText: '中間から毛先中心にしっかりと馴染ませる' },
-      { id: 5, imgLink: 'assets/img/sect08-004.webp', stepText: '5分程放置する' },
-      { id: 6, imgLink: 'assets/img/sect08-004.webp', stepText: 'ぬめりが取れるまでしっかりすすぐ' },
-    ],
-    pictures: [
-      { imgLink: 'assets/img/sect08-001.webp', altText: 'TOKIO INKARAMI HYPER' },
-      { imgLink: 'assets/img/sect08-002.webp', altText: 'TOKIO INKARAMI HYPER' },
-      { imgLink: 'assets/img/sect08-003.webp', altText: 'TOKIO INKARAMI HYPER' },
-      { imgLink: 'assets/img/sect08-004.webp', altText: 'TOKIO INKARAMI HYPER' },
-    ]
-  }
-})
+    data: {
+      steps: [
+        { id: 1, imgLink: 'assets/img/sect08-001.webp', stepText: 'シャンプー後に水分をしっかり切る' },
+        { id: 2, imgLink: 'assets/img/sect08-002.webp', stepText: '3センチ程の量を手のひらに出す' },
+        { id: 3, imgLink: 'assets/img/sect08-003.webp', stepText: 'クリーム状に白くなるまでしっかり伸ばす' },
+        { id: 4, imgLink: 'assets/img/sect08-004.webp', stepText: '中間から毛先中心にしっかりと馴染ませる' },
+        { id: 5, imgLink: 'assets/img/sect08-004.webp', stepText: '5分程放置する' },
+        { id: 6, imgLink: 'assets/img/sect08-004.webp', stepText: 'ぬめりが取れるまでしっかりすすぐ' },
+      ],
+      pictures: [
+        { imgLink: 'assets/img/sect08-001.webp', altText: 'TOKIO INKARAMI HYPER' },
+        { imgLink: 'assets/img/sect08-002.webp', altText: 'TOKIO INKARAMI HYPER' },
+        { imgLink: 'assets/img/sect08-003.webp', altText: 'TOKIO INKARAMI HYPER' },
+        { imgLink: 'assets/img/sect08-004.webp', altText: 'TOKIO INKARAMI HYPER' },
+      ]
+    }
+  })
 </script>
+<script src="assets/js/section09.js"></script>
 </html>

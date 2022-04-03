@@ -3,13 +3,46 @@ $limited-light: rgb(189,180,171);
 
 
 .top-banner {
-    padding-top:56.25%;
+    padding-top:43.75%;
     background: url('../img/hyper-banner.png') no-repeat;
     background-position:center;
     background-size: cover;
-    
 }
 
+
+.sect02 {
+    aspect-ratio: 16/9;
+    background:linear-gradient(rgba(242, 242, 242, 0.4),rgba(255, 255, 255, 0.4)), url(../img/stylists-img.png) no-repeat;
+    background-position: center;
+    background-size: cover;
+    .text {
+        width:80%;
+        margin:3vh auto;
+        background:rgba(122, 122, 122,0.33);
+        text-align: center;
+        padding:3vh 2vw;
+       
+        h4 {
+            line-height:2em;
+        }
+        h5 {
+            font-size: 1.75em;
+            letter-spacing: 4px;
+            line-height: 2;
+            font-weight: bold;
+            .dot-text {
+                text-emphasis: filled;
+                -webkit-text-emphasis: filled;
+            }
+        }
+        h3 {
+            font-size:3em;
+            color:#fff;
+            text-shadow: 0 0 1px #000;
+            letter-spacing: 2px;
+        }
+    }
+}
 
 .sect06 {
     height:100%;
@@ -73,7 +106,11 @@ $limited-light: rgb(189,180,171);
                     padding:20px;
                     background:rgba(122, 122, 122,0.7);
                     color:#fff;
+                    &:nth-child(1) {
+                        border-left:2px solid #f00000;
+                    }
                 }
+                
             }
         }
         h4 {
@@ -135,6 +172,10 @@ $limited-light: rgb(189,180,171);
         h3 {
             line-height: 2em;
             font-family: 'Klee One', cursive;
+        }
+        .pics {
+            width:75%;
+            margin:0 auto;
         }
     }
     .to-link {
