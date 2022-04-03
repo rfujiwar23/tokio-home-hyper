@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/css/normalize.css">
+    <title>Document</title>
+    <script src="https://cdn.jsdelivr.net/npm/vue@2.6.14"></script>
+</head>
+<body>
+
+
+    <section class="sect10" id="section06">
+        <h2>更に「イエでインカラミする毎日」のケアは。。</h2>
+        <div class="container">
+          <div id="section06-01">週2回のTOKIO HOMEと<br>
+            毎日のTOKIO IEシャンプートリートメントで<br>
+            「イエでもインカラミ体験」</div>
+          <div class="row">
+            <div class="col-6 col-sm-6" v-for="image in images">
+              <img :src="image.imgURL" :alt="image.alt">
+            </div>
+          </div>
+          <div class="to-link">
+            <a href="https://ifing-beauty.com/" id="section06-02"></a>
+          </div>
+  
+          <div class="video-area mt-4 py-2 px-4">
+            <div class="embed-responsive embed-responsive-16by9">
+              <video controls controlsList="nodownload" autoplay muted src="assets/img/video/ocean-tokyo-takagi.mp4"></video>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <footer>
+        <p>Copyright &copy; IFING Co., Ltd.</p>
+      </footer>
+    
+</body>
+</html>
