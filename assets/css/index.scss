@@ -1,3 +1,7 @@
+$limited-light: rgb(189,180,171);
+
+
+
 .top-banner {
     padding-top:56.25%;
     background: url('../img/hyper-banner.png') no-repeat;
@@ -113,8 +117,25 @@
 
 
 .sect10 {
-    h3 {
-        text-align:center;
+    background:$limited-light;
+    .section-strip {
+        background:rgb(155, 155, 155);
+        padding:10px 0;
+        p {
+            font-weight:bold;
+            margin-bottom:0;
+            color:#fff;
+            font-size: 1.5em;
+            margin-left:20px;
+        }
+    }
+    .section10-01 {
+        margin:5vh auto;
+        text-align: center;
+        h3 {
+            line-height: 2em;
+            font-family: 'Klee One', cursive;
+        }
     }
     .to-link {
         margin-top:5vh;
@@ -137,9 +158,23 @@
         }
     }
     .video-area {
+        width:75%;
+        margin:0 auto 3vh;
         video {
             width: 100% !important;
             height: auto !important;
+        }
+    }
+}
+
+footer {
+    background:rgb(12, 10, 0); 
+    padding:3vh 0;
+    .container {
+        text-align: center;
+        color:#fff;
+        p {
+            margin-bottom:0;
         }
     }
 }

@@ -87,8 +87,27 @@
   color: #fff;
 }
 
-.sect10 h3 {
+.sect10 {
+  background: #bdb4ab;
+}
+.sect10 .section-strip {
+  background: #9b9b9b;
+  padding: 10px 0;
+}
+.sect10 .section-strip p {
+  font-weight: bold;
+  margin-bottom: 0;
+  color: #fff;
+  font-size: 1.5em;
+  margin-left: 20px;
+}
+.sect10 .section10-01 {
+  margin: 5vh auto;
   text-align: center;
+}
+.sect10 .section10-01 h3 {
+  line-height: 2em;
+  font-family: "Klee One", cursive;
 }
 .sect10 .to-link {
   margin-top: 5vh;
@@ -109,9 +128,25 @@
   background: #e4e2e0;
   background: linear-gradient(60deg, #e4e2e0 0%, #dac1a9 100%);
 }
+.sect10 .video-area {
+  width: 75%;
+  margin: 0 auto 3vh;
+}
 .sect10 .video-area video {
   width: 100% !important;
   height: auto !important;
+}
+
+footer {
+  background: #0c0a00;
+  padding: 3vh 0;
+}
+footer .container {
+  text-align: center;
+  color: #fff;
+}
+footer .container p {
+  margin-bottom: 0;
 }
 
 /*# sourceMappingURL=index.css.map */
