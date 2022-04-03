@@ -24,6 +24,31 @@
     <div class="wrapper">
 
 
+      <section class="sect07" id="section07">
+        <h2>ご自宅での使い方</h2>
+        <div class="container">
+          <div class="row">
+            <div class="steps col-lg-4" f-for="step in steps">
+              <div class="img">
+
+              </div>
+              <div class="text">
+
+              </div>
+            </div>
+          </div>
+          <h4>あとは乾かすだけで<br>サロンで体感した時と同じ質感艶感が回復！！</h4>
+          <div class="col-lg-10 offset-lg-1">
+            <div class="row">
+              <div class="col-3" v-for="picture in pictures">
+                <img :src="picture.imgLink" alt="picture.altText" class="img-fluid">
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+
 
       <section class="sect08" id="section08">
         <div class="container">
@@ -123,4 +148,23 @@
     
     </div>
 </body>
+<script>
+  var example1 = new Vue({
+  el: '#section07',
+  data: {
+    pictures: [
+      { imgLink: 'assets/img/sect08-001.webp', stepText: 'シャンプー後に水分をしっかり切る' },
+      { imgLink: 'assets/img/sect08-002.webp', stepText: '3センチ程の量を手のひらに出す' },
+      { imgLink: 'assets/img/sect08-003.webp', stepText: 'クリーム状に白くなるまでしっかり伸ばす' },
+      { imgLink: 'assets/img/sect08-004.webp', stepText: 'TOKIO INKARAMI HYPER' },
+    ],
+    pictures: [
+      { imgLink: 'assets/img/sect08-001.webp', altText: 'TOKIO INKARAMI HYPER' },
+      { imgLink: 'assets/img/sect08-002.webp', altText: 'TOKIO INKARAMI HYPER' },
+      { imgLink: 'assets/img/sect08-003.webp', altText: 'TOKIO INKARAMI HYPER' },
+      { imgLink: 'assets/img/sect08-004.webp', altText: 'TOKIO INKARAMI HYPER' },
+    ]
+  }
+})
+</script>
 </html>
