@@ -1,0 +1,92 @@
+
+
+.sect09 {
+    #section05-01 {
+        text-align: center;
+        margin:4vh auto;
+        font-size: 2em;
+    }
+    .container {
+        .section05-manga {
+            .quote {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                p {
+                    padding:20px;
+                    background:rgba(122, 122, 122,0.7);
+                    color:#fff;
+                }
+            }
+        }
+        h4 {
+            text-align: center;
+            margin:4vh 0;
+        }
+        .text-area {
+            display:none;
+        }
+        .link-to {
+            position:relative;
+            img {
+                border-radius: 10px;
+                box-shadow: 1px 3px 6px rgba(0,0,0,0.33);
+            }
+            &:hover > .text-area {
+                display: block;
+                background:rgba(122, 122, 122,0.33);
+                position:absolute;
+                top:0;
+                left:0;
+                height:100%;
+                width:100%;
+                border-radius: 10px;
+                margin-top:auto;
+                margin-bottom:auto;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                a {
+                    color:#fff;
+                }
+            }
+        }
+        
+    }
+    
+}
+
+
+
+
+.sect10 {
+    h3 {
+        text-align:center;
+    }
+    .to-link {
+        margin-top:5vh;
+        text-align: center;
+        padding:5px 10px;
+        // background:red;
+        a {
+            background: rgb(138,124,113);
+            border-radius: 5px;
+            background: linear-gradient(60deg, rgba(138,124,113,1) 0%, rgba(180,159,140,1) 100%);
+            color:#fff;
+            padding:10px 20px;
+            font-size: 1.5em;
+            &:hover {
+                text-decoration: underline;
+                text-shadow: 1px 1px 2px rgba(0,0,0,0.66);
+                background: rgb(228,226,224);
+                background: linear-gradient(60deg, rgba(228,226,224,1) 0%, rgba(218,193,169,1) 100%);
+            }
+        }
+    }
+    .video-area {
+        video {
+            width: 100% !important;
+            height: auto !important;
+        }
+    }
+}
