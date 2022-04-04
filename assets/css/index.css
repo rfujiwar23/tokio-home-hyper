@@ -49,14 +49,53 @@
   text-align: center;
 }
 .sect03 .container .sect03-01 .element {
-  background: #545454;
+  background: #c0c0c0;
+  padding: 10px 15px;
+}
+.sect03 .container .sect03-01 .element h5 {
   color: #fff;
+  text-align: center;
+  background: #545454;
+  padding: 5px 0;
+}
+.sect03 .container .sect03-01 .element .bottom-text {
+  text-align: center;
+  font-size: 0.9em;
+  height: 100%;
 }
 .sect03 .container .sect03-01 .multiply {
   display: flex;
   align-items: center;
   justify-content: center;
-  font-size: 4em;
+  font-size: 3em;
+}
+.sect03 .container .sect03-02 {
+  margin: 6vh auto;
+}
+.sect03 .container .sect03-02 h2 {
+  text-align: center;
+  padding-bottom: 3px;
+}
+.sect03 .container .sect03-02 .card {
+  padding: 10px 20px;
+  border-radius: 0;
+  border: none;
+}
+.sect03 .container .sect03-02 .card .inner {
+  width: 95%;
+  margin: 4vh auto;
+  height: 100%;
+  box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.33);
+}
+.sect03 .container .sect03-02 .card .inner h5 {
+  text-align: center;
+  background: blue;
+  padding: 10px;
+  color: #fff;
+}
+.sect03 .container .sect03-02 .card .inner .card-body {
+  padding: 10px;
+  font-size: 0.9em;
 }
 
 .sect06 {
@@ -99,7 +138,7 @@
 }
 .sect07 .section-strip {
   background: #c6c6c6;
-  background: linear-gradient(0deg, #c6c6c6 0%, #8c8a91 100%);
+  background: linear-gradient(0deg, #fdde83 0%, #ffecbf 100%);
   padding: 20px 0;
 }
 .sect07 .section-strip h2.no-background {
@@ -220,7 +259,7 @@
 }
 .sect10 .section-strip {
   background: #c6c6c6;
-  background: linear-gradient(0deg, #c6c6c6 0%, #8c8a91 100%);
+  background: linear-gradient(0deg, #fdde83 0%, #ffecbf 100%);
   padding: 20px 0;
 }
 .sect10 .section-strip h2.no-background {
@@ -236,7 +275,7 @@
   *vertical-align: auto;
   position: relative;
   padding: 0 20px;
-  color: #fff;
+  color: #000;
 }
 .sect10 .section-strip h2.no-background span:before, .sect10 .section-strip h2.no-background span:after {
   content: "";
@@ -244,7 +283,7 @@
   width: 1000px;
   position: absolute;
   top: 0.73em;
-  border-top: 1px solid #ffffff;
+  border-top: 1px solid #8a7c71;
 }
 .sect10 .section-strip h2.no-background span:before {
   right: 100%;
