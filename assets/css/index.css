@@ -6,37 +6,57 @@
 }
 
 .sect02 .container {
-  aspect-ratio: 900/515;
   background: linear-gradient(rgba(242, 242, 242, 0.8), rgba(255, 255, 255, 0.4)), url(../img/stylists-img.png) no-repeat;
   background-position: center;
   background-size: cover;
   padding: 20px;
 }
-.sect02 .text {
+.sect02 .container .text {
   width: 80%;
   margin: 3vh auto;
   background: rgba(122, 122, 122, 0.33);
   text-align: center;
   padding: 3vh 2vw;
 }
-.sect02 .text h4 {
+.sect02 .container .text h4 {
   line-height: 2em;
 }
-.sect02 .text h5 {
+.sect02 .container .text h5 {
   font-size: 1.75em;
   letter-spacing: 4px;
   line-height: 2;
   font-weight: bold;
 }
-.sect02 .text h5 .dot-text {
+.sect02 .container .text h5 .dot-text {
   text-emphasis: filled;
   -webkit-text-emphasis: filled;
 }
-.sect02 .text h3 {
+.sect02 .container .text h3 {
   font-size: 3em;
   color: #fff;
-  text-shadow: 0 0 1px #000;
+  text-shadow: 0 0 2px #000;
   letter-spacing: 2px;
+}
+.sect02 .container .text h3 ruby > rt {
+  color: #000;
+  text-shadow: none;
+}
+
+.sect03 {
+  padding: 8vh 0;
+}
+.sect03 .container .sect03-01 h2 {
+  text-align: center;
+}
+.sect03 .container .sect03-01 .element {
+  background: #545454;
+  color: #fff;
+}
+.sect03 .container .sect03-01 .multiply {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 4em;
 }
 
 .sect06 {
@@ -111,11 +131,22 @@
 .sect07 .section-strip h2.no-background span:after {
   left: 100%;
 }
-.sect07 .container .steps .text h4 {
-  color: red;
+.sect07 .container .steps {
+  margin-bottom: 3vh;
 }
-.sect07 .container .steps .text p {
+.sect07 .container .steps .text {
+  background: #fff;
+}
+.sect07 .container .steps .text h4 span {
+  background: blue;
+}
+.sect07 .container .steps .text .inner-text {
+  height: 10vh;
+  padding: 5px 10px;
+}
+.sect07 .container .steps .text .inner-text p {
   color: blue;
+  margin-bottom: 0;
 }
 .sect07 .container h3 {
   text-align: center;
@@ -271,6 +302,16 @@ footer .container {
 }
 footer .container p {
   margin-bottom: 0;
+}
+
+@media screen and (max-width: 992px) {
+  .sect02 .container {
+    width: 100%;
+    max-width: 992px;
+  }
+  .sect02 .container .text {
+    width: 100%;
+  }
 }
 
 /*# sourceMappingURL=index.css.map */
