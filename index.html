@@ -202,22 +202,28 @@
 
 
       <section class="sect07" id="section07">
-        <h2>ご自宅での使い方</h2>
+        <div class="section-strip">
+          <div class="col-lg-10 offset-lg-1 col-md-10 offset-md-1">
+            <h2 class="no-background"><span>ご自宅での使い方</span></h2>
+          </div>
+        </div>
         <div class="container">
-          <div class="col-lg-8 offset-lg-2 col-md-10 offset-md-1">
+          <div class="col-lg-10 offset-lg-1 col-md-10 offset-md-1 mt-5">
             <div class="row">
-              <div class="steps col-lg-4" v-for="step in steps">
+              <div class="steps col-lg-4 col-md-4 col-sm-6" v-for="step in steps">
                 <div class="img">
                   <img :src="step.imgLink" alt="TOKIO HYPER INKARAMI HOME" class="img-fluid">
                 </div>
                 <div class="text">
                   <h4>{{step.id}}</h4>
-                  <p>{{step.stepText}}</p>
+                  <div class="inner-text">
+                    <p>{{step.stepText}}</p>
+                  </div>
                 </div>
               </div>
             </div>
           </div>
-          <h4>あとは乾かすだけで<br>サロンで体感した時と同じ質感艶感が回復！！</h4>
+          <h3>あとは乾かすだけで<br>サロンで体感した時と同じ質感艶感が回復！！</h3>
           <div class="col-lg-10 offset-lg-1">
             <div class="row">
               <div class="col-3" v-for="picture in pictures">
@@ -232,7 +238,7 @@
 
       <section class="sect08" id="section08">
         <div class="container">
-          <div class="col-lg-8 offset-lg-2 col-md-10 offset-md-1 text-center">
+          <div class="col-lg-8 offset-lg-2 col-md-10 offset-md-1 text-center my-5">
             <h3>さらに、「TOKIO IE HYPER INKARAMI」
               を合わせて使用すると効果実感アップ。</h3>
               <h3>このシリーズは選ばれたサロンの
@@ -279,7 +285,7 @@
           <h4>必ず『トキオインカラミトリートメント＋TOKIO HOME付』
             を実施しています。</h4>
           <h3 class="text-center mb-5">そんなサロンはこちら↓↓↓</h3>
-          <div class="row col-lg-8 offset-lg-2 col-md-10 offset-md-1">
+          <div class="row col-lg-8 offset-lg-2 col-md-10 offset-md-1 reserve">
             <div class="col-sm-6" v-for="salon in salonType">
               <div class="link-to">
                  <div class="text-area">
@@ -299,7 +305,7 @@
       <section class="sect10" id="section10">
         <div class="section-strip">
           <div class="col-lg-10 offset-lg-1 col-md-10 offset-md-1">
-            <p>更に「イエでインカラミする毎日」のケアは</p>
+            <h2 class="no-background"><span>更に「イエでインカラミする毎日」のケアは</span></h2>
           </div>
         </div>
         <div class="container">

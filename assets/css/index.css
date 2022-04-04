@@ -5,11 +5,12 @@
   background-size: cover;
 }
 
-.sect02 {
-  aspect-ratio: 16/9;
-  background: linear-gradient(rgba(242, 242, 242, 0.4), rgba(255, 255, 255, 0.4)), url(../img/stylists-img.png) no-repeat;
+.sect02 .container {
+  aspect-ratio: 900/515;
+  background: linear-gradient(rgba(242, 242, 242, 0.8), rgba(255, 255, 255, 0.4)), url(../img/stylists-img.png) no-repeat;
   background-position: center;
   background-size: cover;
+  padding: 20px;
 }
 .sect02 .text {
   width: 80%;
@@ -72,6 +73,62 @@
   justify-content: center;
 }
 
+.sect07 {
+  padding-bottom: 10vh;
+  background: #ecd5b5;
+}
+.sect07 .section-strip {
+  background: #c6c6c6;
+  background: linear-gradient(0deg, #c6c6c6 0%, #8c8a91 100%);
+  padding: 20px 0;
+}
+.sect07 .section-strip h2.no-background {
+  position: relative;
+  overflow: hidden;
+  font-size: 1.25em;
+}
+.sect07 .section-strip h2.no-background span {
+  display: inline-block;
+  vertical-align: baseline;
+  zoom: 1;
+  *display: inline;
+  *vertical-align: auto;
+  position: relative;
+  padding: 0 20px;
+  color: #fff;
+}
+.sect07 .section-strip h2.no-background span:before, .sect07 .section-strip h2.no-background span:after {
+  content: "";
+  display: block;
+  width: 1000px;
+  position: absolute;
+  top: 0.73em;
+  border-top: 1px solid #ffffff;
+}
+.sect07 .section-strip h2.no-background span:before {
+  right: 100%;
+}
+.sect07 .section-strip h2.no-background span:after {
+  left: 100%;
+}
+.sect07 .container .steps .text h4 {
+  color: red;
+}
+.sect07 .container .steps .text p {
+  color: blue;
+}
+.sect07 .container h3 {
+  text-align: center;
+  margin: 8vh auto;
+}
+
+.sect09 {
+  background: #aaaaaa;
+}
+.sect09 #section09 {
+  padding: 12vh 0;
+  background: #fff;
+}
 .sect09 #section05-01 {
   text-align: center;
   margin: 4vh auto;
@@ -82,13 +139,14 @@
   align-items: center;
   justify-content: center;
 }
-.sect09 .container .section05-manga .quote p {
-  padding: 20px;
+.sect09 .container .section05-manga .quote .text {
   background: rgba(122, 122, 122, 0.7);
-  color: #fff;
+  border-bottom: 3px solid #545454;
 }
-.sect09 .container .section05-manga .quote p:nth-child(1) {
-  border-left: 2px solid #f00000;
+.sect09 .container .section05-manga .quote .text p {
+  padding: 20px;
+  color: #fff;
+  margin-bottom: 0;
 }
 .sect09 .container h4 {
   text-align: center;
@@ -122,20 +180,46 @@
 .sect09 .container .link-to:hover > .text-area a {
   color: #fff;
 }
+.sect09 .container .reserve {
+  margin: 8vh auto;
+}
 
 .sect10 {
   background: #bdb4ab;
 }
 .sect10 .section-strip {
-  background: #9b9b9b;
-  padding: 10px 0;
+  background: #c6c6c6;
+  background: linear-gradient(0deg, #c6c6c6 0%, #8c8a91 100%);
+  padding: 20px 0;
 }
-.sect10 .section-strip p {
-  font-weight: bold;
-  margin-bottom: 0;
+.sect10 .section-strip h2.no-background {
+  position: relative;
+  overflow: hidden;
+  font-size: 1.25em;
+}
+.sect10 .section-strip h2.no-background span {
+  display: inline-block;
+  vertical-align: baseline;
+  zoom: 1;
+  *display: inline;
+  *vertical-align: auto;
+  position: relative;
+  padding: 0 20px;
   color: #fff;
-  font-size: 1.5em;
-  margin-left: 20px;
+}
+.sect10 .section-strip h2.no-background span:before, .sect10 .section-strip h2.no-background span:after {
+  content: "";
+  display: block;
+  width: 1000px;
+  position: absolute;
+  top: 0.73em;
+  border-top: 1px solid #ffffff;
+}
+.sect10 .section-strip h2.no-background span:before {
+  right: 100%;
+}
+.sect10 .section-strip h2.no-background span:after {
+  left: 100%;
 }
 .sect10 .section10-01 {
   margin: 5vh auto;
