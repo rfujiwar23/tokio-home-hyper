@@ -1,4 +1,5 @@
 $limited-light: rgb(189,180,171);
+$hyper-black: rgb(32,31,31);
 
 
 
@@ -118,10 +119,109 @@ $limited-light: rgb(189,180,171);
             }
         }
         .sect03-03 {
+            h2 {
+                color:#fff;
+                text-shadow: 0 0 3px rgb(0,0,0);
+                font-size: 3em;
+                text-align: center;
+                letter-spacing: 5px;
+                background: #ffecbf;
+            }
             h3 {
                 text-align: center;
-                
+
             }
+            .gradient-border {
+                --border-width: 2px;
+              
+                position: relative;
+                // display: flex;
+                // justify-content: center;
+                // align-items: center;
+                width:100%;
+                max-width:640px;
+                margin:8vh auto;
+                font-size: 2.5rem;
+                color: #fff;
+                background: rgb(32,31,31);
+                
+                border-radius: var(--border-width);
+              
+                &::after {
+                  position: absolute;
+                  content: "";
+                  top: calc(-1 * var(--border-width));
+                  left: calc(-1 * var(--border-width));
+                  z-index: -1;
+                  width: calc(100% + var(--border-width) * 2);
+                  height: calc(100% + var(--border-width) * 2);
+                  background: linear-gradient(
+                    60deg,
+                    hsl(61, 91%, 41%),
+                    hsl(54, 72%, 37%),
+                    hsl(48, 64%, 76%),
+                    hsl(17, 87%, 51%),
+                    hsl(54, 71%, 53%),
+                    hsl(0, 0%, 50%),
+                  );
+                  background-size: 300% 300%;
+                  background-position: 0 50%;
+                  border-radius: calc(2 * var(--border-width));
+                  animation: moveGradient 4s alternate infinite;
+                }
+                h4 {
+                    line-height: 2em;
+                }
+
+              }
+              
+              @keyframes moveGradient {
+                50% {
+                  background-position: 100% 50%;
+                }
+              }        
+        }
+    }
+}
+
+.sect04 {
+    .container {
+        .sect04-01 {
+            margin:4vh auto;
+            h4.top {
+                text-decoration: underline;
+                margin:8vh auto;
+            }
+            .structure {
+                .text {
+                    width:100%;
+                    max-width: 480px;
+                    margin:0 auto 6vh;
+                    position:relative;
+                    border:3px dashed rgb(237, 28, 36);
+                    box-shadow: 1px 3px 5px rgba(0,0,0,0.6);
+                    img {
+                        position:absolute;
+                        left:-7%;
+                        transform: rotate(-10deg);
+                    }    
+                    .top {
+                        background:blanchedalmond;
+                        padding:10px 0;
+                        h4 {
+                            font-size: 1.5em;
+                            text-decoration: underline;
+                        }
+                    }
+                    .bottom {
+                        // background:red;
+                        padding:3vh 20px;
+                        background:rgb(255,249,238);
+                        line-height: 1.5em;
+                    }
+                }
+            }
+
         }
     }
 }
@@ -191,7 +291,7 @@ $limited-light: rgb(189,180,171);
                 *vertical-align: auto;
                 position: relative;
                 padding: 0 20px;
-                color:#fff;
+                color:#000;
         
                 &:before, &:after {
                     content: '';
@@ -199,7 +299,7 @@ $limited-light: rgb(189,180,171);
                     width: 1000px;
                     position: absolute;
                     top: 0.73em;
-                    border-top: 1px solid #ffffff;
+                    border-top: 1px solid #000000;
                 }
         
                 &:before { right: 100%; }
@@ -264,6 +364,7 @@ $limited-light: rgb(189,180,171);
                         padding:20px;
                         color:#fff;
                         margin-bottom:0;
+                        font-family: 'Klee One', cursive;
                     }
                 }
                 

@@ -99,8 +99,83 @@
   color: red;
   text-align: center;
 }
+.sect03 .container .sect03-03 h2 {
+  color: #fff;
+  text-shadow: 0 0 3px black;
+  font-size: 3em;
+  text-align: center;
+  letter-spacing: 5px;
+  background: #ffecbf;
+}
 .sect03 .container .sect03-03 h3 {
   text-align: center;
+}
+.sect03 .container .sect03-03 .gradient-border {
+  --border-width: 2px;
+  position: relative;
+  width: 100%;
+  max-width: 640px;
+  margin: 8vh auto;
+  font-size: 2.5rem;
+  color: #fff;
+  background: #201f1f;
+  border-radius: var(--border-width);
+}
+.sect03 .container .sect03-03 .gradient-border::after {
+  position: absolute;
+  content: "";
+  top: calc(-1 * var(--border-width));
+  left: calc(-1 * var(--border-width));
+  z-index: -1;
+  width: calc(100% + var(--border-width) * 2);
+  height: calc(100% + var(--border-width) * 2);
+  background: linear-gradient(60deg, #c5c809, #a2951a, #e9d99b, #ef5315, #dccb32, gray);
+  background-size: 300% 300%;
+  background-position: 0 50%;
+  border-radius: calc(2 * var(--border-width));
+  animation: moveGradient 4s alternate infinite;
+}
+.sect03 .container .sect03-03 .gradient-border h4 {
+  line-height: 2em;
+}
+@keyframes moveGradient {
+  50% {
+    background-position: 100% 50%;
+  }
+}
+
+.sect04 .container .sect04-01 {
+  margin: 4vh auto;
+}
+.sect04 .container .sect04-01 h4.top {
+  text-decoration: underline;
+  margin: 8vh auto;
+}
+.sect04 .container .sect04-01 .structure .text {
+  width: 100%;
+  max-width: 480px;
+  margin: 0 auto 6vh;
+  position: relative;
+  border: 3px dashed #ed1c24;
+  box-shadow: 1px 3px 5px rgba(0, 0, 0, 0.6);
+}
+.sect04 .container .sect04-01 .structure .text img {
+  position: absolute;
+  left: -7%;
+  transform: rotate(-10deg);
+}
+.sect04 .container .sect04-01 .structure .text .top {
+  background: blanchedalmond;
+  padding: 10px 0;
+}
+.sect04 .container .sect04-01 .structure .text .top h4 {
+  font-size: 1.5em;
+  text-decoration: underline;
+}
+.sect04 .container .sect04-01 .structure .text .bottom {
+  padding: 3vh 20px;
+  background: #fff9ee;
+  line-height: 1.5em;
 }
 
 .sect06 {
@@ -159,7 +234,7 @@
   *vertical-align: auto;
   position: relative;
   padding: 0 20px;
-  color: #fff;
+  color: #000;
 }
 .sect07 .section-strip h2.no-background span:before, .sect07 .section-strip h2.no-background span:after {
   content: "";
@@ -167,7 +242,7 @@
   width: 1000px;
   position: absolute;
   top: 0.73em;
-  border-top: 1px solid #ffffff;
+  border-top: 1px solid #000000;
 }
 .sect07 .section-strip h2.no-background span:before {
   right: 100%;
@@ -222,6 +297,7 @@
   padding: 20px;
   color: #fff;
   margin-bottom: 0;
+  font-family: "Klee One", cursive;
 }
 .sect09 .container h4 {
   text-align: center;
