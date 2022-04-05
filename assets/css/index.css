@@ -134,7 +134,7 @@ section .section-strip h2.no-background span:after {
   color: red;
   text-align: center;
 }
-.sect03 .container .sect03-03 h2 {
+.sect03 .container-fluid .sect03-03 h2 {
   color: #fff;
   text-shadow: 0 0 3px black;
   font-size: 3em;
@@ -142,10 +142,10 @@ section .section-strip h2.no-background span:after {
   letter-spacing: 5px;
   background: #ffecbf;
 }
-.sect03 .container .sect03-03 h3 {
+.sect03 .container-fluid .sect03-03 h3 {
   text-align: center;
 }
-.sect03 .container .sect03-03 .gradient-border {
+.sect03 .container-fluid .sect03-03 .gradient-border {
   --border-width: 2px;
   position: relative;
   width: 100%;
@@ -156,7 +156,7 @@ section .section-strip h2.no-background span:after {
   background: #201f1f;
   border-radius: var(--border-width);
 }
-.sect03 .container .sect03-03 .gradient-border::after {
+.sect03 .container-fluid .sect03-03 .gradient-border::after {
   position: absolute;
   content: "";
   top: calc(-1 * var(--border-width));
@@ -170,7 +170,7 @@ section .section-strip h2.no-background span:after {
   border-radius: calc(2 * var(--border-width));
   animation: moveGradient 4s alternate infinite;
 }
-.sect03 .container .sect03-03 .gradient-border h4 {
+.sect03 .container-fluid .sect03-03 .gradient-border h4 {
   line-height: 2em;
 }
 @keyframes moveGradient {
