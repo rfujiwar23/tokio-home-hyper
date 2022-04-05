@@ -5,6 +5,41 @@
   background-size: cover;
 }
 
+section .section-strip {
+  background: #c6c6c6;
+  background: linear-gradient(0deg, #fdde83 0%, #ffecbf 100%);
+  padding: 20px 0;
+}
+section .section-strip h2.no-background {
+  position: relative;
+  overflow: hidden;
+  font-size: 1.25em;
+}
+section .section-strip h2.no-background span {
+  display: inline-block;
+  vertical-align: baseline;
+  zoom: 1;
+  *display: inline;
+  *vertical-align: auto;
+  position: relative;
+  padding: 0 20px;
+  color: #000;
+}
+section .section-strip h2.no-background span:before, section .section-strip h2.no-background span:after {
+  content: "";
+  display: block;
+  width: 1000px;
+  position: absolute;
+  top: 0.73em;
+  border-top: 1px solid #000000;
+}
+section .section-strip h2.no-background span:before {
+  right: 100%;
+}
+section .section-strip h2.no-background span:after {
+  left: 100%;
+}
+
 .sect02 .container {
   background: linear-gradient(rgba(255, 242, 242, 0.8), rgba(255, 255, 255, 0.6)), url(../img/stylists-img.png) no-repeat;
   background-position: center;
@@ -180,8 +215,13 @@
 
 .sect06 {
   height: 100%;
-  background: #8f8fe6;
   position: relative;
+}
+.sect06 .section-strip {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
 }
 .sect06 .sect06-title {
   position: absolute;
@@ -196,16 +236,16 @@
   padding: 5px 10px;
   box-shadow: 1px 3px 6px rgba(0, 0, 0, 0.8);
 }
-.sect06 .container-fluid {
+.sect06 .container {
   padding: 40px 0;
 }
-.sect06 .container-fluid .carousel .carousel-item .manga {
+.sect06 .container .manga {
   margin: 0 auto;
   display: flex;
   align-items: center;
   justify-content: center;
 }
-.sect06 .container-fluid .carousel .carousel-item .manga img {
+.sect06 .container .manga img {
   max-height: calc(100vh - 80px);
   display: flex;
   align-items: center;
@@ -214,7 +254,6 @@
 
 .sect07 {
   padding-bottom: 10vh;
-  background: #ecd5b5;
 }
 .sect07 .section-strip {
   background: #c6c6c6;
@@ -251,25 +290,28 @@
   left: 100%;
 }
 .sect07 .container .steps {
-  margin-bottom: 3vh;
+  display: flex;
+  flex-wrap: wrap;
 }
-.sect07 .container .steps .text {
-  background: #fff;
+.sect07 .container .steps .content {
+  height: 100%;
+  background: #ecd5b5;
+  padding: 10px 15px 10px;
+  color: #000000;
+  position: relative;
 }
-.sect07 .container .steps .text h4 span {
-  background: blue;
+.sect07 .container .steps .content h2 {
+  position: absolute;
+  top: 0;
+  right: 5%;
+  color: #fff;
+  text-shadow: 1px 1px 3px #0c0a00;
 }
-.sect07 .container .steps .text .inner-text {
-  height: 10vh;
+.sect07 .container .steps .content p {
   padding: 5px 10px;
 }
-.sect07 .container .steps .text .inner-text p {
-  color: blue;
-  margin-bottom: 0;
-}
-.sect07 .container h3 {
-  text-align: center;
-  margin: 8vh auto;
+.sect07 .container .steps [class*=col-] {
+  margin-bottom: 30px;
 }
 
 .sect09 {
