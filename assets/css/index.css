@@ -88,7 +88,7 @@ section .section-strip h2.no-background span:after {
   text-align: center;
 }
 .sect03 .container .sect03-01 .element {
-  background: #c0c0c0;
+  background: #e9ecef;
   padding: 10px 15px;
 }
 .sect03 .container .sect03-01 .element h5 {
@@ -109,7 +109,7 @@ section .section-strip h2.no-background span:after {
   font-size: 3em;
 }
 .sect03 .container .sect03-02 {
-  margin: 6vh auto;
+  margin: 6vh auto 0;
 }
 .sect03 .container .sect03-02 h2 {
   text-align: center;
@@ -128,7 +128,7 @@ section .section-strip h2.no-background span:after {
 }
 .sect03 .container .sect03-02 .card .inner h5 {
   text-align: center;
-  background: blue;
+  background: #edd19a;
   padding: 10px;
   color: #fff;
 }
@@ -216,6 +216,12 @@ section .section-strip h2.no-background span:after {
   display: table-cell;
   padding: 1em;
   vertical-align: middle;
+}
+.sect03 .arrow-down {
+  padding-bottom: 2vh;
+}
+.sect03 .arrow-down h2 i {
+  font-size: 1.5em;
 }
 
 .sect04 .container .sect04-01 {
@@ -335,6 +341,7 @@ section .section-strip h2.no-background span:after {
 .sect07 .container-fluid .steps .content {
   height: 100%;
   background: #ecd5b5;
+  box-shadow: 1px 3px 3px rgba(0, 0, 0, 0.33);
   padding: 10px 15px 10px;
   color: #000000;
   position: relative;
@@ -401,7 +408,7 @@ section .section-strip h2.no-background span:after {
   border-bottom: 3px solid #545454;
 }
 .sect09 .container .section05-manga .quote .text p {
-  padding: 20px;
+  padding: 20px 10px;
   color: #fff;
   margin-bottom: 0;
   font-family: "Klee One", cursive;
@@ -445,7 +452,7 @@ section .section-strip h2.no-background span:after {
 
 .sect10 {
   background: #bdb4ab;
-  padding: 4vh 0;
+  padding: 0 0 4vh;
 }
 .sect10 .section-strip {
   background: #c6c6c6;
@@ -555,6 +562,10 @@ footer .container .to-links ul li a {
     overflow-x: hidden;
   }
 
+  .sect08 .container .hyperInkarami02 h4 {
+    font-size: 1.5em;
+  }
+
   .sect10 .container {
     width: 100%;
     max-width: 768px;
@@ -590,6 +601,32 @@ footer .container .to-links ul li a {
 @media screen and (max-width: 500px) {
   .br_on500 {
     display: block;
+  }
+
+  .sect02 .container .text h3 {
+    font-size: 1.75em;
+  }
+  .sect02 .container .text h5 {
+    font-size: 1.25em;
+  }
+
+  .sect03 .container-fluid .sect03-03 .gradient-border h4 {
+    font-size: 0.5em;
+  }
+  .sect03 .container-fluid .sect03-03 .circle__content {
+    font-size: 0.75em;
+  }
+
+  .sect08 .container .hyperInkarami01 h3 {
+    font-size: 1.35em;
+  }
+}
+@media screen and (max-width: 450px) {
+  .sect08 .container .hyperInkarami01 h3 {
+    font-size: 1.3em;
+  }
+  .sect08 .container .hyperInkarami02 h4, .sect08 .container .hyperInkarami02 p {
+    font-size: 1.3em;
   }
 }
 @media screen and (max-width: 428px) {

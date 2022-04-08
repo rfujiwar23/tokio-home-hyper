@@ -101,7 +101,7 @@ section {
                 text-align: center;
             }
             .element {
-                background:#c0c0c0;
+                background:#e9ecef;
                 padding:10px 15px;
                 h5 {
                     color:#fff;
@@ -125,7 +125,7 @@ section {
             }
         }
         .sect03-02 {
-            margin:6vh auto;
+            margin:6vh auto 0;
             h2 {
                 text-align: center;
                 padding-bottom:3px;
@@ -143,7 +143,7 @@ section {
                    box-shadow: 1px 1px 3px rgba(0,0,0,0.33);
                 h5 {
                     text-align: center;
-                    background:blue;
+                    background:rgb(237, 209, 154);
                     padding:10px;
                     color:#fff;
                 }
@@ -260,6 +260,14 @@ section {
             padding: 1em;
             vertical-align: middle;
         }
+    }
+    .arrow-down {
+        h2 {
+            i {
+                font-size: 1.5em;
+            }
+        }
+        padding-bottom: 2vh;
     }
 }
 
@@ -401,6 +409,7 @@ section {
             .content {
                 height: 100%;
                 background:rgb(236, 213, 181);
+                box-shadow: 1px 3px 3px rgba(0,0,0,0.33);
                 padding: 10px 15px 10px;
                 color: #000000;
                 position: relative;
@@ -480,7 +489,7 @@ section {
                     background:rgba(122, 122, 122,0.7);
                     border-bottom:3px solid #545454;
                     p {
-                        padding:20px;
+                        padding:20px 10px;
                         color:#fff;
                         margin-bottom:0;
                         font-family: 'Klee One', cursive;
@@ -535,7 +544,7 @@ section {
 
 .sect10 {
     background:$limited-light;
-    padding:4vh 0;
+    padding:0 0 4vh;
     .section-strip {
         background: rgb(198,198,198);
         background: linear-gradient(0deg, #fdde83 0%, #ffecbf 100%);;
@@ -651,6 +660,16 @@ footer {
     body {
         overflow-x: hidden;
     }
+
+    .sect08 {
+        .container {
+            .hyperInkarami02 {
+                h4 {
+                    font-size: 1.5em;
+                }
+            }
+        }
+    }
     .sect10 {
         .container {
             width:100%;
@@ -701,6 +720,60 @@ footer {
 @media screen and (max-width:500px) {
     .br_on500 {
         display: block;
+    }
+
+    .sect02 {
+        .container {
+            .text {
+                h3 {
+                    font-size: 1.75em;
+                }
+                h5 {
+                    font-size: 1.25em;
+                }
+            }
+        }
+    }
+
+    .sect03 {
+        .container-fluid {
+            .sect03-03 {
+                .gradient-border {
+                    h4 {
+                        font-size: 0.5em;
+                    }
+                }
+                .circle__content {
+                    font-size: 0.75em;
+                }
+            }
+        }
+    }
+    .sect08 {
+        .container {
+            .hyperInkarami01 {
+                h3 {
+                    font-size: 1.35em;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width:450px) {
+    .sect08 {
+        .container {
+            .hyperInkarami01 {
+                h3 {
+                    font-size: 1.3em;
+                }
+            }
+            .hyperInkarami02 {
+                h4, p {
+                    font-size: 1.3em;
+                }
+            }
+        }
     }
 }
 

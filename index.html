@@ -27,7 +27,7 @@
     
 
 
-  <title>Document</title>
+  <title>TOKIO HYPER インカラミ HOME</title>
   <script src="https://cdn.jsdelivr.net/npm/vue@2.6.14"></script>
 </head>
 
@@ -59,11 +59,6 @@
           <h4>専用集中ケアパック</h4>
           <img src="assets/img/hyper-tokio.webp" alt="ハイパーインカラミ" class="img-fluid">
         </div>
-        <div class="text-img text-center">
-
-
-        </div>
-
       </div>
     </section>
 
@@ -111,14 +106,16 @@
             </div>
           </div>
         </div>
-        <div class="container">
-          
+        <div class="arrow-down">
+          <h2 class="text-center"><i class="fa-solid fa-arrow-down-long"></i></h2>
         </div>
       </div>
       <div class="container-fluid">
         <div class="container">
           <div class="col-lg-10 offset-lg-1 col-md-10 offset-md-1 sect03-03">
-            <h2><span>HYPER INKARAMI HOME </span></h2>
+            <div class="col-lg-8 offset-lg-2 col-md-8 offset-md-2 col-sm-8 offset-sm-2 mb-5">
+              <h1><img src="assets/img/hyper-inkarami-home.png" alt="HYPER INKARAMI ホーム" class="img-fluid"></h1>
+            </div>
             <h3>ならどちらの想いも叶えます！</h3>
             <div class="gradient-border py-3 px-4 text-center">
               <h4>
@@ -237,40 +234,23 @@
           <h2 class="no-background"><span>ご自宅での使い方</span></h2>
         </div>
       </div>
-      
-      
       <div class="container-fluid">
         <div class="col-lg-10 offset-lg-1 col-md-10 offset-md-1 mt-5">
-          <!-- <div class="row row-equal-height">
-            <div class="steps col-lg-3 col-md-6 col-sm-6" v-for="step in steps">
-              <div class="img">
-                <img :src="step.imgLink" alt="TOKIO HYPER INKARAMI HOME" class="img-fluid">
-              </div>
-              <div class="text">
-                <h4><span>{{step.id}}</span></h4>
-                <div class="inner-text">
-                  <p>{{step.stepText}}</p>
-                </div>
-              </div>
-            </div>
-          </div> -->
           <div class="row row-flex steps">
-            <div class="col-md-6 col-sm-6 col-xs-6 col-8 mx-auto" v-for="step in steps">
+            <div class="col-md-3 col-sm-6 col-xs-6 col-8 mx-auto" v-for="step in steps">
               <div class="content">
                 <h2 class="stepNumber">{{step.id}}.</h2>
                 <img :src="step.imgLink" alt="TOKIO HYPER INKARAMI HOME" class="img-fluid">
-                <p>{{step.stepText}}</p>
-                
+                <p>{{step.stepText}}</p>               
               </div>
             </div>
           </div>
-
         </div>
-        
+    
         <div class="col-lg-10 offset-lg-1 text-center bottom">
           <h3>あとは乾かすだけで<br>サロンで体感した時と同じ質感艶感が回復！！</h3>
           <div class="row">
-            <div class="col-lg-3 col-md-3 col-sm-6 col-6" v-for="picture in pictures">
+            <div class="col-lg-3 col-md-3 col-sm-6 col-6 mb-3" v-for="picture in pictures">
               <img :src="picture.imgLink" alt="picture.altText" class="img-fluid">
             </div>
           </div>
@@ -323,10 +303,9 @@
             <div class="col-6"><img src="assets/img/section05-02.jpg" alt="" class="img-fluid"></div>
           </div>
         </div>
-        <h4>実は、<br>トキオインカラミトリートメント<br>成功サロンは</h4>
+        <h4 v-html="text1"></h4>
         <!-- font awesome arrow goes down here -->
-        <h4>必ず<br>『トキオインカラミトリートメント』<br>＋<br>『TOKIO HOME付』<br>
-          を実施しています。</h4>
+        <h4 v-html="text2"></h4>
         <h3 class="text-center mb-5">そんなサロンはこちら↓↓↓</h3>
         <div class="row col-lg-8 offset-lg-2 col-md-10 offset-md-1 reserve">
           <div class="col-sm-6 mb-5" v-for="salon in salonType">
@@ -338,7 +317,7 @@
             </div>
           </div>
         </div>
-        <h4>いつも来店されてるサロンも紹介されてますよ！！</h4>
+        <h4 v-html="text3"></h4>
       </div>
 
     </section>
@@ -348,31 +327,21 @@
     <section class="sect10" id="section10">
       <div class="section-strip">
         <div class="col-lg-10 offset-lg-1 col-md-10 offset-md-1">
-          <h2 class="no-background"><span>更に「イエでインカラミする毎日」のケアは</span></h2>
+          <h2 class="no-background"><span>{{top}}</span></h2>
         </div>
       </div>
       <div class="container">
         <div class="section10-01">
-          <h3>週2回のTOKIO HOMEと<br>
-            毎日のTOKIO IEシャンプートリートメントで<br>
-            「イエでもインカラミ体験」</h3>
+          <h3 v-html="line1"></h3>
           <div class="row pics">
-            <!-- <div class="col-6 col-sm-6" v-for="pic in tokiopics">
-                  <img :src="pic.imgLink" :alt="image.altText">
-                </div> -->
-            <div class="col-6 col-sm-6">
-              <img src="assets/img/tokio_bg001.png" class="img-fluid" alt="TOKIO HYPER INKARAMI">
-            </div>
-            <div class="col-6 col-sm-6">
-              <img src="assets/img/tokio_bg002.png" class="img-fluid" alt="TOKIO HYPER INKARAMI">
+            <div class="col-sm-6 col-6" v-for="picture in pictures">
+              <img :src="picture.imgLink" alt="picture.altText" class="img-fluid">
             </div>
           </div>
         </div>
-
         <div class="to-link">
           <a href="https://ifing-beauty.com/">詳しくはこちら</a>
         </div>
-
         <div class="video-area mt-4 py-2 px-4">
           <div class="embed-responsive embed-responsive-16by9">
             <video controls controlsList="nodownload" autoplay muted
@@ -399,26 +368,10 @@
   </div>
 </body>
 
-<script>
-  var example1 = new Vue({
-    el: '#section07',
-    data: {
-      steps: [
-        { id: 1, imgLink: 'assets/img/sect08-001.webp', stepText: 'シャンプー後に水分をしっかり切る' },
-        { id: 2, imgLink: 'assets/img/sect08-002.webp', stepText: '3センチ程の量を手のひらに出し、クリーム状に白くなるまでしっかり伸ばす' },
-        { id: 3, imgLink: 'assets/img/sect08-003.webp', stepText: '中間から毛先中心にしっかりと馴染ませる。※5分程放置するとより効果的に。' },
-        { id: 4, imgLink: 'assets/img/sect08-004.webp', stepText: 'ぬめりが取れるまでしっかりすすぐ' },
-      ],
-      pictures: [
-        { imgLink: 'assets/img/sect08-001.webp', altText: 'TOKIO INKARAMI HYPER' },
-        { imgLink: 'assets/img/sect08-002.webp', altText: 'TOKIO INKARAMI HYPER' },
-        { imgLink: 'assets/img/sect08-003.webp', altText: 'TOKIO INKARAMI HYPER' },
-        { imgLink: 'assets/img/sect08-004.webp', altText: 'TOKIO INKARAMI HYPER' },
-      ]
-    }
-  })
-</script>
+
+<script src="assets/js/section07.js"></script>
 <script src="assets/js/section09.js"></script>
+<script src="assets/js/section10.js"></script>
 <script type="text/javascript">
   var divs = ["Section1", "Section2", "Section3", "Section4"];
   var showDiv = null;
